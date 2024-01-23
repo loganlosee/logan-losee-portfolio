@@ -1,36 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React, { useState } from 'react';
+import reactLogo from '/react.svg'
 import viteLogo from '/vite.svg'
+import bootstrapLogo from '/bootstrap-logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header'; 
+import AboutMe from './components/AboutMe';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [activeSection, setActiveSection] = useState('about');
   return (
-    <>
+    
+    <div className="App">
+      <Header /* Pass down the state and setter function */ 
+            activeSection={activeSection} 
+            setActiveSection={setActiveSection} />
+    <AboutMe />
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <img src={viteLogo} className="logo" alt="Vite logo" />
+        <img src={reactLogo} className="logo" alt="React logo" />
+        <img src={bootstrapLogo} className="logo" alt="bootstrap logo" />
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Built with Vite, React, and Bootstrap.
       </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
