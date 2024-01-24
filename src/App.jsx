@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
-import reactLogo from '/react.svg'
-import viteLogo from '/vite.svg'
-import bootstrapLogo from '/bootstrap-logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header'; 
-import AboutMe from './components/AboutMe';
-import Footer from './components/Footer';
+
+import Header from './components/header'; 
+import Footer from './components/footer';
+import AboutMe from './components/aboutMe';
+import Portfolio from './components/portfolio';
+import Contact from './components/contact';
+import Resume from './components/resume';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
   return (
     
     <div className="App">
-      <Header /* Pass down the state and setter function */ 
-            activeSection={activeSection} 
-            setActiveSection={setActiveSection} />
-      <AboutMe />
-      
+      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+      <main>
+        {activeSection === 'about' && <AboutMe />}
+        {activeSection === 'portfolio' && <Portfolio />}
+        {activeSection === 'contact' && <Contact />}
+        {activeSection === 'resume' && <Resume />}
+      </main>
       <Footer />
 
     </div>
