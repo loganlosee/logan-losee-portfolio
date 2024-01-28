@@ -5,7 +5,6 @@ import hikeSelfie from '/hike-selfie.jpg';
 import boxing from '/boxing.jpg';
 import spliceBoy from '/splice-boy.jpg';
 import doggo from '/doggo.jpg';
-import cowboy from '/cowboy.jpg';
 
 function AboutMe() {
   return (
@@ -27,10 +26,6 @@ function AboutMe() {
         <div>
           <img src={boxing} alt="boxing-pic" />
           <p>I like to fight! (in the appropriate environment)</p>
-        </div>
-        <div>
-          <img src={cowboy} alt="yee-haw" />
-          <p>Yeehaw</p>
         </div>
       </div>
     </section>
