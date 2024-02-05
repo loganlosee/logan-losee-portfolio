@@ -9,7 +9,6 @@ import doggo from '/doggo.jpg';
 function AboutMe() {
   return (
     <section id="about" className="about-me-section">
-      <h2>About Me</h2>
       <div className="grid">
         <div>
           <img src={spliceBoy} alt="me-at-work" />

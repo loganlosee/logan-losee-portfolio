@@ -1,4 +1,22 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  z-index: 1030; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+  padding-top: 110px; 
+}
+
+.navbar-nav {
+  justify-content: center; 
+}
+
 .nav-link.active {
-    color: #007bff; /* Active link color */
+    color: #007bff;
     font-weight: bold;
   }

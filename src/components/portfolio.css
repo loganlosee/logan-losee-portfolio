@@ -1,0 +1,30 @@
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+  }
+  
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .portfolio-item {
+      width: 50%; 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .portfolio-item {
+      width: 33.33%; 
+    }
+  }
+  

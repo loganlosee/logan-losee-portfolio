@@ -1,7 +1,25 @@
 .contact-section {
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    color: #333; 
+  }
+  
+  .contact-info {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    line-height: 1.6; 
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none; 
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline; 
+  }
