@@ -1,0 +1,55 @@
+.resume-section {
+    background-color: #fff;
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    padding: 40px 20px; 
+    line-height: 1.6; 
+  }
+  
+  .resume-content {
+    max-width: 800px; 
+    margin: auto; 
+  }
+  
+  .resume-content h1, .resume-content h2, .resume-content h3 {
+    color: #007bff;
+  }
+  
+  .resume-content h1 {
+    margin-bottom: 0.5em; 
+  }
+  
+  .resume-content h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5em; 
+    margin-top: 2em;
+  }
+  
+  .resume-content h3 {
+    margin-top: 1.5em; 
+    font-size: 1.2em; 
+  }
+  
+  .resume-content p, .resume-content ul {
+    margin-top: 0.5em; 
+  }
+  
+  .resume-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .resume-content ul {
+    padding-left: 20px; 
+  }
+  
+  .resume-content li {
+    margin-bottom: 0.25em;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .resume-content {
+      padding: 0 10px;
+    }
+  }
+  

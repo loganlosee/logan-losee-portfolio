@@ -22,7 +22,6 @@ function Header({ activeSection, setActiveSection }) {
 
   return (
     <header className="bg-light py-3" style={{position: 'fixed', width: '100%', top: '0', zIndex: '1030'}}>
-      <div><h2>Logan Losee</h2></div>
       <nav className="navbar navbar-expand-lg navbar-light">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
